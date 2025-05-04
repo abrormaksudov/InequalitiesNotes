@@ -23,18 +23,61 @@
 
 \maketitle
 
+%
 % AM-GM
+%
 \section{Algebraic Inequalities}
 \textbf{Theorem 1 (AM-GM)}. \textit{Let $a_1, \dots, a_n$ be non-negative real numbers. Then:}
 \[
 \frac{a_1 + \dots + a_n}{2} \geq \sqrt[n]{a_1 \dots a_n}
 \]
 \textit{with equality if and only if $a_1 = a_2 = \dots = a_n$.} \\[10pt]
+%
 % Cauchy-Schwarz
+%
 \textbf{Theorem 2 (Cauchy-Schwarz)}. \textit{Let $a_1, \dots, a_n$, $b_1, \dots, b_n$ be real numbers. Then:}
 \[
 (a_1^2 + \dots + a_n^2)(b_1^2 + \dots + b_n^2) \geq (a_1b_1 + \dots a_nb_n)^2
 \]
-
+%
+% Titu's Lemma
+%
+\textbf{Theorem 3 (Titu's Lemma)}. \textit{Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$ be positive real numbers. Then:}
+\[
+\frac{a_1^2}{b_1} + \frac{a_2^2}{b_2} + \dots + \frac{a_n^2}{b_n} \geq \frac{(a_1 + a_2 + \dots + a_n)^2}{b_1 + b_2 + \dots + b_n}  
+\]
+%
+% Young's Inequality
+%
+\textbf{Theorem 4 (Young's Inequality).} \textit{Let $a, b$ be nonnegative real numbers and if $p, q > 0 $ such that $\frac{1}{p} + \frac{1}{q} = 1$. Then:}
+\[
+ab \leq \frac{a^p}{p} + \frac{b^q}{q}
+\]
+\textit{with equality if and only if $a^p = b^q$.} \\[10pt]
+%
+% Hölder's Inequality
+%
+\textbf{Theorem 5 (Hölder's Inequality)}. \textit{Let $a_1, \dots, a_n$, $b_1, \dots, b_n$ be positive real numbers. Suppose that  $P > 1$ and $q > 1$ satisfy $\frac{1}{p} + \frac{1}{q} = 1$. Then:}
+\[
+\left( \sum_{i=1}^n a_i^p \right) ^ \frac{1}{p} \left( \sum_{i=1}^n b_i^q \right) ^ \frac{1}{q} \geq \sum_{i=1}^n a_ib_i
+\]
+\textit{More generally, let $x_{ij} (i=1, \dots, m, j=1, \dots, n)$ be positive real numbers. Suppose that $w_1, w_2, \dots, w_n$ are positive real numbers satisfying $w_1 + w_2 + \dots + w_n = 1$. Then:}
+\[
+\prod_{j=1}^{n} \left( \sum_{i=1}^m x_{ij} \right)^{w_j} \geq \sum_{i=1}^m \left( \prod_{j=1}^n x_{ij}^{w_j} \right)
+\]
+%
+% Minkowski Inequality
+%
+\textbf{Theorem 6 (Mikowski Inequality).} \textit{Let $a_1, \dots, a_n$, $b_1, \dots, b_n$ be positive real numbers. Suppose that $p > 1$. Then:}
+\[
+\left( \sum_{i=1}^n a_i^p \right)^\frac{1}{p} + \left( \sum_{i=1}^n b_i^p \right)^\frac{1}{p} \geq \left( \sum_{i=1}^n (a_i + b_i)^p \right)^\frac{1}{p}
+\]
+%
+% Generalized Minkowski Inequality
+%
+\textbf{Theorem 7 (Generalized Minkowski Inequality).} \textit{Let $a_{ij} \geq 0$ for $i=1, \dots, n$ and $j=1, \dots, n$ and let $p>1$. Then:}
+\[
+\left[ \sum_{i=1}^n \left( \sum_{j=1}^m a_{ij} \right)^p \right]^\frac{1}{p} \leq \sum_{j=1}^m \left( \sum_{i=1}^n a_{ij}^p \right)^\frac{1}{p} 
+\]
 
 \end{document}
