@@ -94,5 +94,36 @@ ab \leq \frac{a^p}{p} + \frac{b^q}{q}
 \[
 \sum_{i=1}^n a_ib_i \geq \sum_{i=1}^n a_ib_{\sigma(i)} \geq \sum_{i=1}^n a_ib_{n+1-i}
 \]
+%
+% Convex Function
+%
+\textbf{Definition 1 (Convex Function).} \textit{Suppose that $f$ is a one-variable function defined on $[a, b] \subset \mathbb{R}$. $f$ is called a convex function on $[a, b]$ if and only if for all $x, y \in [a, b]$ and for all $0 \leq t \leq 1$, we have:}
+\[
+tf(x) + (1 - t)f(y) \geq f(tx + (1-t)y)
+\]
+%
+% Jensen’s Inequality
+%
+\textbf{Theorem 10 (Jensen’s Inequality).} \textit{Let $f: [a, b] \to \mathbb{R}$ be a convex function. Then for any $x_1, \dots, x_n \in [a, b]$ and non-negative real numbers $w_1, \dots, w_n$ with $w_1 + \dots + w_n = 1$, we have:}
+\[
+\sum_{i=1}^n w_i f(x_i) \geq f( \sum_{i=1}^n w_i x_i )
+\]
+%
+% Popoviciu's Inequality
+%
+\textbf{Theorem 11 (Popoviciu's Inequality).} \textit{Let $f: I \to \mathbb{R}$. If $f$ is convex, then for any three points $x, y, z$ in $I$:}
+\[
+\frac{f(x) + f(y) + f(z)}{3} + f\left(\frac{x + y + z}{3} \right) \geq \frac{2}{3} \left[ f\left( \frac{x + y}{2} \right) + f\left( \frac{y + z}{2} \right) + f\left( \frac{z + x}{2} \right) \right]
+\]
+%
+% Majorization
+%
+\textbf{Definition 2 (Majorization).} \textit{Given two sequences $(a) = (a_1, a_2, \dots, a_n)$ and  $(b) = (b_1, b_2, \dots, b_n)$ (where $a_i, b_i \in \mathbb{R} \quad \forall i \in \{ 1, 2, \dots, n \}$). We say that the sequence $(a)$ majorizes the sequence $(b)$, and write $(a) \succ (b)$, if the following conditions are fulfilled:}
+\begin{align*}
+    a_1 \geq a_2 \geq &\dots \geq a_n; \\
+    b_1 \geq b_2 \geq &\dots \geq b_n; \\
+    a_1 + a_2 + &\dots + a_n = b_1 + b_2 + \dots + b_n; \\
+    a_1 + a_2 + &\dots + a_k = b_1 + b_2 + \dots + b_k \quad \forall k \in \{ 1, 2, \dots, n-1 \} \\
+\end{align*}
 
 \end{document}
