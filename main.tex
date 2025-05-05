@@ -174,6 +174,51 @@ d_1 \geq \sqrt[2]{d_2} \geq \sqrt[3]{d_3} \geq \dots \geq \sqrt[n]{d_n}
 \[
 \sum_{sym} x_1^{a_1} x_2^{a_2} \dots x_n^{a_n} \geq \sum_{sym} x_1^{b_1} x_2^{b_2} \dots x_n^{b_n}
 \]
-\textit{where the symmetric sum is taken over all $n!$ permutations of $(x_1, x_2, \dots, x_n)$.}
+\textit{where the symmetric sum is taken over all $n!$ permutations of $(x_1, x_2, \dots, x_n)$.} \\[10pt]
+%
+% Power Mean Inequality
+%
+\textbf{Theorem 19 (Power Mean Inequality).} \textit{Let $x_1, \dots, x_n > 0$. The power mean of order $r$ is defined by:}
+\[
+\left\{
+\begin{aligned}
+  M_{(x_1, \dots, x_n)}(0) &= \sqrt[n]{x_1 \dots x_n} \\
+  M_{(x_1, \dots, x_n)}(r) &= \left( \frac{x_1^r + \dots + x_n^r}{n} \right)^\frac{1}{r}, \quad r \neq 0
+\end{aligned}
+\right.
+\]
+\textit{Then, $M_{(x_1, \dots, x_n)} : \mathbb{R} \to \mathbb{R}$ is continuous and monotone increasing.}
+%
+% Bernoulli’s Inequality
+%
+\textbf{Theorem (Bernoulli’s Inequality).} \textit{For every real number $r \geq 1$ and real number $x \geq -1$, we have:}
+\[
+(1 + x)^r \geq 1 + rx
+\]
+\textit{while for $0 \leq r \leq 1$ and real number $x \geq -1$, we have:}
+\[
+(1 + x)^r \leq 1 + rx
+\]
+%
+% Aczel's Inequality
+%
+\textbf{Theorem 20 (Aczel's Inequality).} \textit{Let $a_1, \dots, a_n, b_1, \dots, b_n$ be non-negative real numbers satisfying $a_1^2 \geq a_2^2 + \dots + a_n^2$ and $b_1^2 \geq b_2^2 + \dots + b_n^2$. Then:}
+\[
+a_1b_1 - (a_2b_2 + \dots + a_nb_n) \geq \sqrt{(a_1^2 - (a_2^2 + \dots + a_n^2))(b_1^2 - (b_2^2 + \dots + b_n^2))}
+\]
+%
+% Huygens Inequality
+%
+\textbf{Theorem 21 (Huygens Inequality).} \textit{Let $a_1, a_2, \dots, a_n, b_1, b_2, \dots, b_n, w_1, w_2, \dots, w_n$ be positive real numbers such that $w_1 + w_2 + \dots + w_n = 1$. Then:}
+\[
+\prod_{i=1}^n (a_i + b_i)^{w_i} \geq \prod_{i=1}^n a_i^{w_i} + \prod_{i=1}^n b_i^{w_i}
+\]
+%
+% Heinz Inequality
+%
+\textbf{Theorem 22 (Heinz Inequality).} \textit{For $a, b > 0$ and $\alpha \in [0, 1], we have:$}
+\[
+\sqrt{ab} \leq \frac{a^{\alpha}b^{1-\alpha} + a^{1-\alpha}b^{\alpha}}{2} \leq \frac{a + b}{2}
+\]
 
 \end{document}
