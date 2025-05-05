@@ -68,7 +68,7 @@ ab \leq \frac{a^p}{p} + \frac{b^q}{q}
 %
 % Minkowski Inequality
 %
-\textbf{Theorem 6 (Mikowski Inequality).} \textit{Let $a_1, \dots, a_n$, $b_1, \dots, b_n$ be positive real numbers. Suppose that $p > 1$. Then:}
+\textbf{Theorem 6 (Minkowski Inequality).} \textit{Let $a_1, \dots, a_n$, $b_1, \dots, b_n$ be positive real numbers. Suppose that $p > 1$. Then:}
 \[
 \left( \sum_{i=1}^n a_i^p \right)^\frac{1}{p} + \left( \sum_{i=1}^n b_i^p \right)^\frac{1}{p} \geq \left( \sum_{i=1}^n (a_i + b_i)^p \right)^\frac{1}{p}
 \]
@@ -78,6 +78,21 @@ ab \leq \frac{a^p}{p} + \frac{b^q}{q}
 \textbf{Theorem 7 (Generalized Minkowski Inequality).} \textit{Let $a_{ij} \geq 0$ for $i=1, \dots, n$ and $j=1, \dots, n$ and let $p>1$. Then:}
 \[
 \left[ \sum_{i=1}^n \left( \sum_{j=1}^m a_{ij} \right)^p \right]^\frac{1}{p} \leq \sum_{j=1}^m \left( \sum_{i=1}^n a_{ij}^p \right)^\frac{1}{p} 
+\]
+%
+% Chebyshev's Sum Inequality
+%
+\textbf{Theorem 8 (Chebyshev's Sum Inequality).} \textit{Let $a_1, \dots, a_n$ and $b_1, \dots, b_n$ be real numbers. Then:}
+\begin{align*}
+    \frac{a_1b_1 + \dots + a_nb_n}{n} &\geq \frac{(a_1 + \dots + a_n)}{n} \frac{(b_1 + \dots + b_n)}{n} \\
+    \frac{1}{n} \sum_{i=1}^n a_ib_i &\geq \left( \frac{1}{n} \sum_{i=1}^n a_i \right) \left( \frac{1}{n} \sum_{i=1}^n b_i \right)
+\end{align*}
+%
+% Rearrangement Inequality
+%
+\textbf{Theorem 9 (Rearrangement Inequality).} \textit{Let $a_1, \dots, a_n$ and $b_1, \dots, b_n$ be real numbers. For any permutation $\sigma$ of $\{1, \dots, n\}$, we have:}
+\[
+\sum_{i=1}^n a_ib_i \geq \sum_{i=1}^n a_ib_{\sigma(i)} \geq \sum_{i=1}^n a_ib_{n+1-i}
 \]
 
 \end{document}
