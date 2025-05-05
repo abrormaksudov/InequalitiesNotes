@@ -125,5 +125,55 @@ tf(x) + (1 - t)f(y) \geq f(tx + (1-t)y)
     a_1 + a_2 + &\dots + a_n = b_1 + b_2 + \dots + b_n; \\
     a_1 + a_2 + &\dots + a_k = b_1 + b_2 + \dots + b_k \quad \forall k \in \{ 1, 2, \dots, n-1 \} \\
 \end{align*}
+%
+% Karamata's Inequality
+%
+\textbf{Theorem 12 (Karamata's Inequality).} \textit{Let $f: [a, b] \to \mathbb{R}$ be a convex function. Suppose that $(x_1, \dots, x_n) \succ (y_1, \dots, y_n)$ where $x_1, \dots, x_n$, $y_1, \dots, y_n \in [a, b]$. Then:}
+\[
+\sum_{i=1}^n f(x_i) \geq \sum_{i=1}^n f(y_i)
+\]
+%
+% Weighted AM-GM Inequality
+%
+\textbf{Theorem 13 (Weighted AM-GM Inequality).} \textit{Let $w_1, \dots, w_n \geq 0$ such that $w_1 + \dots w_n = 1$. For all $x_1, \dots, x_n \geq 0$, we have:}
+\[
+\sum_{i=1}^n w_i x_i \geq \prod_{i=1}^n x_i^{w_i}
+\]
+%
+% Schur's Inequality
+%
+\textbf{Theorem 14 (Schur's Inequality).} \textit{Let $x, y, z$ be non-negative real numbers. For any $r > 0$, we have:}
+\[
+\sum_{cyc} x^r (x - y) (x - z) \geq 0
+\]
+%
+% Generalized Schur's Inequality
+%
+\textbf{Theorem 15 (Generalized Schur's Inequality).} \textit{Let $a, b, c, x, y, z$ be six non-negative real numbers such that the sequences $(a, b, c)$ and $(x, y, z)$ are similarly sorted. Then:}
+\[
+x (a - b) (a - c) + y (b - c) (b - a) + z (c - a) (c - b) \geq 0
+\]
+%
+% Newton's Inequality
+%
+\textbf{Theorem 16 (Newton's Inequality).} \textit{Let $x_1, \dots, x_n$ be non-negative real numbers. Define the symmetric polynomials $s_0, s_1, \dots, s_n$ by $(x + x_1)(x + x_2) \dots (x + x_n) = s_nx^n + \dots + s_1 + s_0$, and define the symmetric averages by $d_i = \frac{s_i}{\binom{n}{i}}$. Then:}
+\[
+d_i^2 \geq d_{i+1}d_{i-1}
+\]
+%
+% Maclaurin's Inequality
+%
+\textbf{Theorem 17 (Maclaurin's Inequality).} \textit{Let $x_1, \dots, x_n$ be non-negative real numbers. Define the symmetric polynomials $s_0, s_1, \dots, s_n$ by $(x + x_1)(x + x_2) \dots (x + x_n) = s_nx^n + \dots + s_1 + s_0$, and define the symmetric averages by $d_i = \frac{s_i}{\binom{n}{i}}$. Then:}
+\[
+d_1 \geq \sqrt[2]{d_2} \geq \sqrt[3]{d_3} \geq \dots \geq \sqrt[n]{d_n}
+\]
+%
+% Muirhead's Inequality
+%
+\textbf{Theorem 18 (Muirhead's Inequality).} \textit{Suppose that $(a_1, \dots, a_n) \succ (b_1, \dots, b_n)$, and $x_1, \dots, x_n$ are positive real numbers. Then:}
+\[
+\sum_{sym} x_1^{a_1} x_2^{a_2} \dots x_n^{a_n} \geq \sum_{sym} x_1^{b_1} x_2^{b_2} \dots x_n^{b_n}
+\]
+\textit{where the symmetric sum is taken over all $n!$ permutations of $(x_1, x_2, \dots, x_n)$.}
 
 \end{document}
