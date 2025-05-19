@@ -55,6 +55,43 @@
 \end{tcolorbox}
 
 
+\subsection{Elementary Symmetric Polynomials}
+\begin{tcolorbox}
+    Let $t$ be a variable and $x_1, x_2, \dots, x_n$ be real numbers. Define:
+    \begin{align*}
+        P(x) &= \prod_{i=1}^n (t+x_i) = (t+x_1)(t+x_2)\dots(t+x_n) \\
+        &= t^n + (x_1+\dots+x_n)t^{n-1} + (x_1x_2 + x_1x_3 + \dots)t^{n-2} + \dots \\
+        & + (x_2x_3\dots x_n + x_1x_3\dots x_n + \dots)t + x_1x_2x_3\dots x_n \\
+        &= 1 \cdot t^n + \left(\sum_{1\leq i\leq n} x_i\right) t^{n-1} + \left(\sum_{1\leq i < j\leq n} x_ix_j\right) t^{n-2} + \dots \\
+        &+ \left(\sum_{1\leq i_1<\dots<i_{n-1}\leq n} x_{i_1}x_{i_2}\dots x_{i_{n-1}}\right) t + \prod_{i=1}^n x_i.
+    \end{align*}
+    In other words,
+    \[
+    P(x) = \prod_{i=1}^n (t+x_i) = c_0t^n + c_1t^{n-1} + c_2t^{n-2} + \dots + c_{n-1}t+c_n,
+    \]
+    where the coefficient $c_k$ is the $k$-th elementary symmetric sum:
+    \begin{align*}
+        &c_0 = 1, &&c_1 = \sum_{1\leq i \leq n} x_i, &&c_2 = \sum_{1\leq i < j \leq n} x_ix_j, \\
+        &c_3 = \sum_{1\leq i < j < k \leq n} x_ix_jx_k, &&\dots, &&c_n = \prod_{i=1}^n x_i.
+    \end{align*}
+    In general, for $0 \leq k \leq n$
+    \[
+    c_k = \sum_{1 \leq i_1< i_2 < \dots < i_{k} \leq n} x_{i_1}x_{i_2}\dots x_{i_{k}}.
+    \]
+    Example: $\textstyle x_1=1, x_2=2, x_3=3 \implies (x+1)(x+2)(x+3) = x^3 + (1 + 2 + 3)x^2 + (1 \cdot 2 + 2 \cdot 3 + 3 \cdot 1) x + 1 \cdot 2 \cdot 3 = x^3 + 6x^2 + 11x + 6$.
+\end{tcolorbox}
+
+
+\subsection{Elementary Symmetric Mean}
+\begin{tcolorbox}
+    Let $x_1, x_2, \dots, x_n$ be real numbers. The $k$-th elementary symmetric mean is defined as:
+    \[
+    d_k = \frac{c_k}{\binom{n}{k}} = \frac{1}{\binom{n}{k}} \sum_{1 \leq i_1< i_2 < \dots < i_{k} \leq n} x_{i_1}x_{i_2}\dots x_{i_{k}}.
+    \]
+    Example: $\textstyle x_1=1, x_2=2, x_3=3 \implies d_2 = \frac{c_2}{\binom{3}{2}}=\frac{11}{3}$.
+\end{tcolorbox}
+
+
 \section{Inequalities}
 
 
@@ -226,6 +263,27 @@
 \end{tcolorbox}
 
 
+\subsection{Newton's Inequality}
+\begin{tcolorbox}
+    For $x_1, x_2, \dots, x_n > 0$ and $k=1,2,\dots,n-1$, we have:
+    \[
+    d_i^2 \geq d_{i-1}d_{i+1},
+    \]
+    with equality if and only if $x_1 = x_2 = \dots = x_n$. \\[6pt]
+    Example: $\textstyle a=1, b=2, c=3 \implies (\frac{ab + bc + ca}{3})^2 \geq (\frac{a+b+c}{3})abc \implies \left(\frac{1\cdot2 + 2\cdot3 + 3\cdot1}{3}\right)^2 \geq \frac{1+2+3}{3} (1\cdot2\cdot3) \implies \left(\frac{11}{3}\right)^2 \geq 2 \cdot 6 \implies 13.444 \geq 12$.
+\end{tcolorbox}
+
+
+\subsection{Maclaurin's Inequality}
+\begin{tcolorbox}
+    For $x_1, x_2, \dots, x_n > 0$, we have:
+    \[
+    d_1 \geq \sqrt[2]{d_2} \geq \sqrt[3]{d_3} \geq \dots \geq \sqrt[n]{d_n}
+    \]
+    with equality if and only if $x_1 = x_2 = \dots = x_n$. \\[6pt]
+    Example: $\textstyle a=1, b=2, c=3 \implies \frac{a+b+c}{3} \geq \sqrt{\frac{ab + bc + ca}{3}} \geq \sqrt[3]{abc} \implies \frac{1+2+3}{3} \geq \sqrt{\frac{1\cdot2 + 2\cdot3 + 3\cdot1}{3}} \geq \sqrt[3]{1\cdot2\cdot3} \implies 2 \geq \frac{11}{3} \geq \sqrt[3]{6} \implies 2 \geq 1.915 \geq 1.817$.
+\end{tcolorbox}
+
 
 \subsection{Young's Inequality}
 \subsection{Cauchy–Schwarz Inequality}
@@ -237,8 +295,6 @@
 \subsection{Rearrangement Inequality}
 \subsection{Schur's Inequality}
 \subsection{Generalized Schur's Inequality}
-\subsection{Newton's Inequality}
-\subsection{Maclaurin's Inequality}
 \subsection{Aczel's Inequality}
 \subsection{Huygens Inequality}
 \subsection{Heinz Inequality}
