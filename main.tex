@@ -326,19 +326,47 @@
 
 \subsection{Minkowski Inequality}
 \begin{tcolorbox}
-    
+    Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$ be positive real numbers and $p>1$. Then:
+    \[
+    (a_1^p + a_2^p + \dots + a_n^p)^\frac{1}{p} + (b_1^p + b_2^p + \dots + b_n^p)^\frac{1}{p} \geq ((a_1 + b_1)^p + (a_2 + b_2)^p + \dots + (a_n + b_n)^p)^\frac{1}{p},
+    \]
+    or, more precisely,
+    \[
+    \left(\sum_{i=1}^n a_i^p\right)^\frac{1}{p} + \left(\sum_{i=1}^n b_i^p\right)^\frac{1}{p} \geq \left(\sum_{i=1}^n (a_i + b_i)^p\right)^\frac{1}{p}
+    \]
+    Example: $\textstyle p=2, a=(3,4), b=(6,8) \\[6pt]
+    \implies \sqrt{a_1^2+a_2^2} + \sqrt{b_1^2+b_2^2} \geq \sqrt{(a_1+b_1)^2+(a_2+b_2)^2} \\[6pt]
+    \implies  \sqrt{3^2+4^2} + \sqrt{6^2+8^2} \geq \sqrt{(3+6)^2+(4+8)^2} \\[6pt]
+    \implies \sqrt{25} + \sqrt{100} \geq \sqrt{225} \implies 15 \geq 15$. (equal. why?)
 \end{tcolorbox}
 
 
 \subsection{Generalized Minkowski Inequality}
 \begin{tcolorbox}
-    
+    Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$, \dots, $z_1, z_2, \dots, z_n$ be positive real numbers, and $p>1$. Then:
+    \[
+    \underbrace{\left(\sum_{i=1}^n a_{i}^p\right)^\frac{1}{p} + \left(\sum_{i=1}^n b_{i}^p\right)^\frac{1}{p} + \dots + \left(\sum_{i=1}^n z_{i}^p\right)^\frac{1}{p}}_{m \text{ terms}} \geq \left(\sum_{i=1}^n\underbrace{(a_{i}+b_{i}+\dots+z_{i})^p}_{m \text{ terms}}\right)^\frac{1}{p}.
+    \]
+    More precisely,
+    \[
+    \sum_{j=1}^m \left(\sum_{i=1}^n a_{ij}^p\right)^\frac{1}{p} \geq \left[\sum_{i=1}^n \left(\sum_{j=1}^m a_{ij}\right)^p \right]^\frac{1}{p}
+    \]
 \end{tcolorbox}
 
 
 \subsection{Young's Inequality}
 \begin{tcolorbox}
-    
+    Let $a,b\geq0$ and $p,q>1$ such that $\frac{1}{p}+\frac{1}{q}=1$. Then:
+    \[
+    \frac{a^p}{p} + \frac{b^q}{q} \geq ab
+    \]
+    with equality if and only if $a^p=b^q$. \\[6pt]
+    Moreover, for increasing functions
+    \[
+    \int_0^a f(x)\,dx + \int_0^b f^{-1}(x)\,dx \geq ab
+    \]
+    with equality if and only if $f(a)=b$. \\[6pt]
+    Example: $\textstyle a=2,b=3,p=3,q=\frac{3}{2} \implies \frac{2^3}{3}+\frac{3^{3/2}}{3/2} \geq 2\cdot3 \implies 6.13 \geq 6.$
 \end{tcolorbox}
 
 
