@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=1in, bottom=1in, left=0.6in, right=0.6in]{geometry}
 \usepackage{hyperref}
 \usepackage{amsmath, amssymb}
 \usepackage{enumitem}
@@ -372,13 +372,33 @@
 
 \subsection{Rearrangement Inequality}
 \begin{tcolorbox}
-    
+    Let $a_1 \leq a_2 \leq \dots \leq a_n$, $b_1 \leq b_2 \leq \dots \leq b_n$ be two sequences that are both increasing (or both decreasing). Then:
+    \[
+    a_1b_1 + a_2b_2 + \dots + a_nb_n \geq a_1b_{\sigma(1)} + a_1b_{\sigma(2)} + \dots + a_1b_{\sigma(n)} \geq a_1b_{n} + a_2b_{n-1} + \dots a_nb_{1}, 
+    \]
+    where $\sigma$ is a permutation function, which sends each of $1,2, \dots, n$ to a different value in $\{1,2,\dots,n\}$. \\[6pt]
+    More precisely,
+    \[
+    \sum_{i=1}^n a_ib_i \geq \sum_{i=1}^n a_ib_{\sigma(i)} \geq \sum_{i=1}^n a_ib_{n+1-i}.
+    \]
+    In other words, the sum is \emph{maximized} when both sequences are ordered \emph{similarly} (both increasing or both decreasing), and is \emph{minimazied} when both sequences are ordered \emph{oppositely} (one increasing, the other decreasing). \\[6pt]
+    Example: $\textstyle a^2+b^2+c^2 \geq ab + bc + ca; \\[6pt] 
+    a=(1,3,5), \quad b=(2,4,6)
+    \implies 1\cdot2+3\cdot4+5\cdot6 \geq 1\cdot4+3\cdot6+5\cdot2 \geq 1\cdot6+3\cdot4+5\cdot2 \implies 44 \geq 32 \geq 28$.
 \end{tcolorbox}
 
 
 \subsection{Chebyshev's Sum Inequality}
 \begin{tcolorbox}
-    
+    Let $a_1 \leq a_2 \leq \dots \leq a_n$, $b_1 \leq b_2 \leq \dots \leq b_n$ be two sequences that are both increasing (or both decreasing). Then:
+    \[
+    \frac{a_1b_1 + a_2b_2 + \dots + a_nb_n}{n} \geq \frac{a_1 + a_2 + \dots + a_n}{n} \cdot \frac{b_1 + b_2 + \dots + b_n}{n} \geq \frac{a_1b_n + a_2b_{n-1} + \dots + a_nb_1}{n},
+    \]
+    or, more precisely,
+    \[
+    \frac{\sum_{i=1}^n a_ib_i}{n} \geq \frac{\sum_{i=1}^n a_i}{n} \times \frac{\sum_{i=1}^n b_i}{n} \geq \frac{\sum_{i=1}^n a_ib_{n+1-i}}{n}.
+    \]
+    Example: $a_1 \leq a_2 \leq a_3,\ b_1 \leq b_2 \leq b_3 \implies \textstyle a_1b_1 + a_2b_2 + a_3b_3 \geq \frac{1}{3} (a_1+a_2+a_3)(b_1+b_2+b_3)$.
 \end{tcolorbox}
 
 
