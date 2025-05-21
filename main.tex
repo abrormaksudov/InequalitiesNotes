@@ -55,8 +55,31 @@
 \end{tcolorbox}
 
 
+\subsection{Cyclic Sum}
+\begin{tcolorbox}[breakable]
+    The \emph{cyclic sum} of a function $f$ over $n$ variables is the sum over \textit{all cyclic permutations} of its arguments:
+    \[
+    \sum_{\text{cyc}} f(a_1,a_2,\dots,a_n) = f(a_1,a_2,\dots,a_n) + f(a_2,a_3,\dots,a_1) + \dots +f(a_n,a_1,\dots,a_{n-1}).
+    \]
+    The number of terms is equal to the number of variables: $n$. \\[6pt]
+    Example: $\textstyle f(a,b,c)=a^2b \implies \sum_{\text{cyc}}=a^2b+b^2c+c^2a$.
+\end{tcolorbox}
+
+
+\subsection{Symmetric Sum}
+\begin{tcolorbox}[breakable]
+    The \emph{symmetric sum} of a function $f$ over $n$ variables is the sum over \textit{all possible permutations} of its arguments:
+    \[
+    \sum_{\text{sym}} f(a_1,a_2,\dots,a_n) = \sum_{\sigma \in S_n} f(a_{\sigma(1)}, a_{\sigma(2)}, \dots,a_{\sigma(n)}),
+    \]
+    where $S_n$ is the set of all permutations of $\{1, 2, \dots, n\}$. \\[6pt]
+    The number of terms equals to the number of all permutations of the variables $=n!$. \\[6pt]
+    Example: $\textstyle f(a,b,c)=a^2b \implies \sum_{\text{sym}}=a^2b+a^2c+b^2a+b^2c+c^2a+c^2b$.
+\end{tcolorbox}
+
+
 \subsection{Elementary Symmetric Polynomials}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $t$ be a variable and $x_1, x_2, \dots, x_n$ be real numbers. Define:
     \begin{align*}
         P(x) &= \prod_{i=1}^n (t+x_i) = (t+x_1)(t+x_2)\dots(t+x_n) \\
@@ -73,7 +96,7 @@
     \begin{align*}
         &c_0 = 1, &&c_1 = \sum_{1\leq i \leq n} x_i, &&c_2 = \sum_{1\leq i < j \leq n} x_ix_j, \\
         &c_3 = \sum_{1\leq i < j < k \leq n} x_ix_jx_k, &&\dots, &&c_n = \prod_{i=1}^n x_i.
-    \end{align*}
+    \end{align*} \newpage
     In general, for $0 \leq k \leq n$
     \[
     c_k = \sum_{1 \leq i_1< i_2 < \dots < i_{k} \leq n} x_{i_1}x_{i_2}\dots x_{i_{k}}.
@@ -432,7 +455,6 @@
     \]
     Example: $\textstyle (5,0) \succ (3,2) \implies x^5+y^5 \geq x^3y^2+x^2y^3$.
 \end{tcolorbox}
-
 
 
 \subsection{Aczel's Inequality}
