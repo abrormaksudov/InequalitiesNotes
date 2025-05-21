@@ -435,7 +435,6 @@
 \end{tcolorbox}
 
 
-
 \subsection{Schur's Inequality}
 \begin{tcolorbox}
     Let $a,b,c \geq 0$ and $r>0$. Then:
@@ -457,12 +456,66 @@
 \end{tcolorbox}
 
 
-\subsection{Aczel's Inequality}
-\subsection{Huygens Inequality}
-\subsection{Heinz Inequality}
 \subsection{Nesbitt's Inequality}
-\subsection{Cesàro's Inequality}
+\begin{tcolorbox}
+    Let $a,b,c>0$. Then:
+    \[
+    \frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2}
+    \]
+    with equality if and only if $a=b=c$. \\[6pt]
+    Example: $\textstyle a=1,b=2,c=3 \implies \frac{1}{2+3} + \frac{2}{3+1} + \frac{3}{1+2} \geq \frac{3}{2} \implies \frac{1}{5} + \frac{2}{4} + \frac{3}{3} \geq \frac{3}{2} \implies1.7 \geq 1.5$.
+\end{tcolorbox}
+
+
+\subsection{Aczel's Inequality}
+\begin{tcolorbox}
+    Let $a_1,\dots,a_n$, $b_1,\dots,b_n$ be positive real numbers. If $a_1^2\geq a_2^2+\dots+a_n^2$ and $b_1^2\geq b_2^2+\dots+b_n^2$, then:
+    \[
+    (a_1b_1 - a_2b_2 - \dots - a_nb_n)^2 \geq (a_1^2 - a_2^2 - \dots \ a_n^2)(b_1^2 - b_2^2 - \dots \ b_n^2)
+    \]
+    with equality if and only if the sequences are proportional. \\[6pt]
+    More precisely,
+    \[
+    \left( a_1b_1 - \sum_{i=2}^n a_ib_i \right)^2 \geq \left( a_1^2 - \sum_{i=2}^n a_i^2 \right) \left( b_1^2 - \sum_{i=2}^n b_i^2 \right).
+    \]
+    Example: $(a)=(6,3,2), (b)=(5,4,1) \\[6pt]
+    \implies (6\cdot5 - 3\cdot4 - 2\cdot 1)^2 \geq (6^2-3^2-2^2)(5^2-4^2-1^2) \implies 16^2 \geq 23\cdot8 \implies 256\geq184$.
+\end{tcolorbox}
+
+
+\subsection{Huygens Inequality}
+\begin{tcolorbox}
+    Let $a_1,\dots,a_n$, $b_1,\dots,b_n$, $w_1,\dots,w_n$ be positive real numbers with $w_1+\dots+w_n=1$. Then:
+    \[
+    \prod_{i=1}^n (a_i+b_i)^{w_i} \geq \prod_{i=1}^n a_i^{w_i} + \prod_{i=1}^n b_i^{w_i}.
+    \]
+    Example: $\textstyle (a_i)=(6,11), (b_i)=(13,2), (w_i)=(3/4, 1/4) \\[6pt]
+    \implies (6+13)^{3/4}(11+2)^{1/4} \geq 6^{3/4}11^{1/4} + 13^{3/4}2^{1/4} \implies 17.280\geq15.123$.
+\end{tcolorbox}
+
+
+\subsection{Heinz Mean Inequality}
+\begin{tcolorbox}
+    Let $a,b>0$ and $0\leq\nu\leq1$. Then:
+    \[
+    \sqrt{ab} \leq \frac{a^{\nu}b^{1-\nu} + a^{1-\nu}b^{\nu}}{2} \leq \frac{a+b}{2}.
+    \]
+    Example: $\textstyle a=9,b=7,\nu=0.3 \\[6pt]
+    \implies \sqrt{4\cdot17} \leq \frac{4^{0.3}17^{0.7} + 4^{0.7}17^{0.3}}{2} \leq \frac{4+17}{2} \implies 8.246 \leq 8.593 \leq 10.5$.
+\end{tcolorbox}
+
+
 \subsection{Mildorf's Inequality}
+\begin{tcolorbox}
+    Let $k\geq-1$ be an integer and $a,b>0$. Then:
+    \[
+    \frac{(1+k)(a-b)^2+8ab}{4(a+b)} \geq \sqrt[k]{\frac{a^k+b^k}{2}}
+    \]
+    with equality if and only if $a=b$ or $k\in\{-1,1\}$, where the power mean $k=0$ is interpreted as the geometric mean $\sqrt{ab}$. Moreover, the inequality is flipped if $k<-1$. \\[6pt]
+    Example: $\textstyle a=22, b=13,k=5 \\[6pt]
+    \implies \frac{(1+5)(22-13)^2+8\cdot22\cdot13}{4(22+13)} \geq \sqrt[5]{\frac{22^5+13^5}{2}} \implies \frac{6\cdot9^2+2,288}{4\cdot35} \geq \sqrt[5]{\frac{5,153,632+371,293}{2}} \\[6pt]
+    \implies \frac{2774}{140} \geq \sqrt[5]{2,762,462.5} \implies 19.814 \geq 19.420$.
+\end{tcolorbox}
 
 
 \section{Selected Inequalities}
