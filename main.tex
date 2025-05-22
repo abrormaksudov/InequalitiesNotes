@@ -31,7 +31,7 @@
 
 
 \subsection{Majorization}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $x = (x_1, x_2, \dots, x_n)$ and $y = (y_1, y_2, \dots, y_n)$ be non-increasing sequences of real numbers. Then $x$ is said to \emph{majorize} $y$, denoted $x \succ y$, if the following conditions are satisfied:
     \begin{enumerate}
         \item $x_1 \geq x_2 \geq \dots \geq x_n$ \emph{and} $y_1 \geq y_2 \geq \dots \geq y_n$\,;
@@ -43,7 +43,7 @@
 
 
 \subsection{Convex Function}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     A function $f : [a,b] \to \mathbb{R}$ is called \textit{convex} (concave up) on $[a,b]$ if and only if for all $x,y \in [a,b]$ and all $\lambda \in [0,1]$, the following inequality holds:
     \[
     \lambda f(x) + (1-\lambda)f(y) \geq f(\lambda x + (1-\lambda)y).
@@ -106,7 +106,7 @@
 
 
 \subsection{Elementary Symmetric Mean}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $x_1, x_2, \dots, x_n$ be real numbers. The $k$-th elementary symmetric mean is defined as:
     \[
     d_k = \frac{c_k}{\binom{n}{k}} = \frac{1}{\binom{n}{k}} \sum_{1 \leq i_1< i_2 < \dots < i_{k} \leq n} x_{i_1}x_{i_2}\dots x_{i_{k}}.
@@ -119,7 +119,7 @@
 
 
 \subsection{AM-GM Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n >0$. Then, the following inequality holds:
     \[
     \frac{a_1 + a_2 + \dots + a_n}{n} \geq \sqrt[n]{a_1 a_2 \dots a_n},
@@ -135,7 +135,7 @@
 
 
 \subsection{Weighted AM-GM Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n > 0$ and $w_1, w_2, \dots, w_n$ be positive integers. Then, by AM-GM we have:
     \begin{align*}
         &\frac{\underbrace{a_1 + a_1 + \dots + a_1}_{w_1} + \underbrace{a_2 + a_2 + \dots + a_2}_{w_2} + \dots + \underbrace{a_n + a_n + \dots + a_n}_{w_n}}{w_1 + w_2 + \dots + w_n} \\
@@ -162,7 +162,7 @@
 
 
 \subsection{Power Mean Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n > 0$. Then, the $r$-th power mean is defined as:
     \[
     \mathcal{P}(r) =
@@ -190,7 +190,7 @@
 
 
 \subsection{Weighted Power Mean Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots a_n > 0$ and $w_1, w_2, \dots, w_n \geq 0$ with $w_1 + w_2 + \dots + w_n = 1$. Then, the $r$-th weighted power mean is defined as:
     \[
     \mathcal{P}(r) =
@@ -211,7 +211,7 @@
 
 
 \subsection{HM-GM-AM-QM Inequalities}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n > 0$. Then:
     \begin{align*}
         0 < \text{HM} \leq \text{GM} &\leq \text{AM} \leq \text{QM} \\
@@ -226,7 +226,7 @@
 
 
 \subsection{Bernoulli’s Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     For all $x \geq -1$ and $r \geq 1$:
     \[
     (1 + x)^r \geq 1 + rx.
@@ -236,7 +236,7 @@
 
 
 \subsection{Jensen's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     If $f$ is \emph{convex}, then:
     \[
     \frac{f(a_1) + f(a_2) + \dots + f(a_n)}{n} \geq f \left(\frac{a_1 + a_2 + \dots + a_n}{n} \right)
@@ -256,7 +256,7 @@
 
 
 \subsection{Karamata's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     If $f$ is \emph{convex}, and $(a_i)$ \emph{majorizes} $(b_i)$, then:
     \[
     f(a_1) + f(a_2) + \dots f(a_n) \geq f(b_1) + f(b_2) + \dots f(b_n),
@@ -271,7 +271,7 @@
 
 
 \subsection{Popoviciu's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     If $f$ is \emph{convex}, and $a, b, c > 0$, then:
     \begin{align*}
         &af(x) + bf(y) + cf(z) + (a+b+c) f\left(\frac{ax + by + cz}{a+b+c}\right) \geq \\[4pt]
@@ -287,7 +287,7 @@
 
 
 \subsection{Newton's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     For $x_1, x_2, \dots, x_n > 0$ and $k=1,2,\dots,n-1$, we have:
     \[
     d_i^2 \geq d_{i-1}d_{i+1},
@@ -299,7 +299,7 @@
 
 
 \subsection{Maclaurin's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     For $x_1, x_2, \dots, x_n > 0$, we have:
     \[
     d_1 \geq \sqrt[2]{d_2} \geq \sqrt[3]{d_3} \geq \dots \geq \sqrt[n]{d_n}
@@ -315,7 +315,7 @@
 
 
 \subsection{Cauchy–Schwarz Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$ be real numbers. Then:
     \[
     (a_1^2 + a_2^2 + \dots + a_n^2)(b_1^2 + b_2^2 + \dots + b_n^2) \geq (a_1b_1 + a_2b_2 + \dots a_nb_n)^2,
@@ -331,7 +331,7 @@
 
 
 \subsection{Titu's Lemma/Sedrakyan's Inequality/Engel's Form}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1,a_2,\dots,a_n\geq0$ and $b_1,b_2,\dots,b_n>0$. Then:
     \[
     \frac{a_1^2}{b_1} + \frac{a_2^2}{b_2} + \dots + \frac{a_n^2}{b_n} \geq \frac{(a_1+a_2+\dots+a_n)^2}{b_1+b_2+\dots+b_n}.
@@ -358,7 +358,7 @@
 
 
 \subsection{Minkowski Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$ be positive real numbers and $p>1$. Then:
     \[
     (a_1^p + a_2^p + \dots + a_n^p)^\frac{1}{p} + (b_1^p + b_2^p + \dots + b_n^p)^\frac{1}{p} \geq ((a_1 + b_1)^p + (a_2 + b_2)^p + \dots + (a_n + b_n)^p)^\frac{1}{p},
@@ -375,7 +375,7 @@
 
 
 \subsection{Generalized Minkowski Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n$, $b_1, b_2, \dots, b_n$, \dots, $z_1, z_2, \dots, z_n$ be positive real numbers, and $p>1$. Then:
     \[
     \underbrace{\left(\sum_{i=1}^n a_{i}^p\right)^\frac{1}{p} + \left(\sum_{i=1}^n b_{i}^p\right)^\frac{1}{p} + \dots + \left(\sum_{i=1}^n z_{i}^p\right)^\frac{1}{p}}_{m \text{ terms}} \geq \left(\sum_{i=1}^n\underbrace{(a_{i}+b_{i}+\dots+z_{i})^p}_{m \text{ terms}}\right)^\frac{1}{p}.
@@ -388,7 +388,7 @@
 
 
 \subsection{Young's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a,b\geq0$ and $p,q>1$ such that $\frac{1}{p}+\frac{1}{q}=1$. Then:
     \[
     \frac{a^p}{p} + \frac{b^q}{q} \geq ab
@@ -404,7 +404,7 @@
 
 
 \subsection{Rearrangement Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1 \leq a_2 \leq \dots \leq a_n$, $b_1 \leq b_2 \leq \dots \leq b_n$ be two sequences that are both increasing (or both decreasing). Then:
     \[
     a_1b_1 + a_2b_2 + \dots + a_nb_n \geq a_1b_{\sigma(1)} + a_1b_{\sigma(2)} + \dots + a_1b_{\sigma(n)} \geq a_1b_{n} + a_2b_{n-1} + \dots a_nb_{1}, 
@@ -422,7 +422,7 @@
 
 
 \subsection{Chebyshev's Sum Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1 \leq a_2 \leq \dots \leq a_n$, $b_1 \leq b_2 \leq \dots \leq b_n$ be two sequences that are both increasing (or both decreasing). Then:
     \[
     \frac{a_1b_1 + \dots + a_nb_n}{n} \geq \frac{a_1 + \dots + a_n}{n} \cdot \frac{b_1 + \dots + b_n}{n} \geq \frac{a_1b_n + \dots + a_nb_1}{n},
@@ -436,7 +436,7 @@
 
 
 \subsection{Schur's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a,b,c \geq 0$ and $r>0$. Then:
     \[
     a^r(a-b)(a-c) + b^r(b-c)(b-a) + c^r(c-a)(c-b) \geq 0
@@ -447,7 +447,7 @@
 
 
 \subsection{Muirhead's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1,a_2,\dots,a_n\geq0$ and suppose that $(x_n)$ \emph{majorizes} $(y_n)$, $x\succ y$. Then:
     \[
     \sum_{\text{sym}} a_1^{x_1}a_2^{x_2}\dots a_n^{x_n} \geq \sum_{\text{sym}} a_1^{y_1}a_2^{y_2}\dots a_n^{y_n}.
@@ -457,7 +457,7 @@
 
 
 \subsection{Nesbitt's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a,b,c>0$. Then:
     \[
     \frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} \geq \frac{3}{2}
@@ -468,7 +468,7 @@
 
 
 \subsection{Aczel's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1,\dots,a_n$, $b_1,\dots,b_n$ be positive real numbers. If $a_1^2\geq a_2^2+\dots+a_n^2$ and $b_1^2\geq b_2^2+\dots+b_n^2$, then:
     \[
     (a_1b_1 - a_2b_2 - \dots - a_nb_n)^2 \geq (a_1^2 - a_2^2 - \dots \ a_n^2)(b_1^2 - b_2^2 - \dots \ b_n^2)
@@ -484,7 +484,7 @@
 
 
 \subsection{Huygens Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1,\dots,a_n$, $b_1,\dots,b_n$, $w_1,\dots,w_n$ be positive real numbers with $w_1+\dots+w_n=1$. Then:
     \[
     \prod_{i=1}^n (a_i+b_i)^{w_i} \geq \prod_{i=1}^n a_i^{w_i} + \prod_{i=1}^n b_i^{w_i}.
@@ -495,7 +495,7 @@
 
 
 \subsection{Heinz Mean Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a,b>0$ and $0\leq\nu\leq1$. Then:
     \[
     \sqrt{ab} \leq \frac{a^{\nu}b^{1-\nu} + a^{1-\nu}b^{\nu}}{2} \leq \frac{a+b}{2}.
@@ -506,7 +506,7 @@
 
 
 \subsection{Mildorf's Inequality}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $k\geq-1$ be an integer and $a,b>0$. Then:
     \[
     \frac{(1+k)(a-b)^2+8ab}{4(a+b)} \geq \sqrt[k]{\frac{a^k+b^k}{2}}
@@ -519,6 +519,44 @@
 
 
 \section{Selected Inequalities}
+\begin{equation}
+    (a+b)(b+c)(c+a) \geq 8abc
+\end{equation}
+\vspace{13pt}
+\begin{equation}
+    \sqrt{1+\sqrt{a}} + \sqrt{1+\sqrt{a + \sqrt{a^2}}} + \ldots + \sqrt{1+\sqrt{a + \ldots +\sqrt{a^n}}} < na, \quad n\geq2, a\geq2, n\in\mathbb{N}
+\end{equation}
+\vspace{13pt}
+\begin{equation}
+    (n!)^2 \geq n^n, \quad n\in\mathbb{N}
+\end{equation}
+\vspace{13pt}
+\begin{equation}
+    \begin{aligned}
+        \frac{1}{3} + \frac{2}{3\cdot5} + \frac{3}{3\cdot5\cdot7} + \ldots + \frac{n}{3\cdot5\dots(2n+1)} &< \frac{1}{2}, \quad n\in\mathbb{N} \\
+        \sum_{k=1}^n \frac{k}{\prod_{j=1}^k (2j+1)} &< \frac{1}{2}, \quad n\in\mathbb{N}
+    \end{aligned}
+\end{equation}
+\vspace{13pt}
+\begin{equation}
+    \begin{aligned}
+        \frac{2^3+1}{2^3-1} \cdot \frac{3^3+1}{3^3-1} \cdot\ldots\cdot \frac{n^3+1}{n^3-1}&<\frac{3}{2}, \quad n\geq2,n\in\mathbb{N} \\
+        \prod_{k=2}^n \frac{k^3+1}{k^3-1} &< \frac{3}{2}, \quad n\geq2,n\in\mathbb{N}
+    \end{aligned}
+\end{equation}
+\vspace{13pt}
+\begin{equation}
+    \begin{aligned}
+        1\cdot1! + 2\cdot2! + 3\cdot3! + \ldots + n\cdot n! < (n+1)!, \quad n\in\mathbb{N} \\
+        \sum_{k=1}^n k\cdot k! < (n+1)!, \quad n\in\mathbb{N}
+    \end{aligned}
+\end{equation}
+\vspace{13pt}
+
+
+\section{Selected Problems}
+
+
 \section{Proofs}
 \subsection{Proof of AM-GM Inequality using Induction}
 \begin{tcolorbox}[breakable]
@@ -583,7 +621,7 @@
 
 
 \subsection{Proof of AM-GM Inequality using Jensen's Method}
-\begin{tcolorbox}
+\begin{tcolorbox}[breakable]
     Let $a_1, a_2, \dots, a_n > 0$ and $f(x) = \ln{x}$ be a \textit{concave} function on $(0, \infty)$. By Jensen's Inequality we have:
     \begin{align*}
         f \left(\frac{1}{n} \sum_{i=1}^n a_i \right) &\geq \frac{1}{n} \sum_{i=1}^n f(a_i) \\
@@ -595,15 +633,5 @@
     \end{align*}
     \hfill$\square$
 \end{tcolorbox}
-
-
-\section{Selected Problems}
-\begin{enumerate}
-    \item $-$
-\end{enumerate}
-
-
-
-
 
 \end{document}
